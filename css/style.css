@@ -53,6 +53,18 @@ body {
   flex-direction: column;
 }
 
+.c-flexend {
+  justify-content: flex-end;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 .border {
   border: 1px dashed black;
 }
@@ -74,8 +86,51 @@ nav {
 }
 
 nav > div {
-  height: 60px;
-  flex-basis: calc(100% / 3);
+  height: 80px;
+  margin: 0 5px;
+}
+
+.logo-d {
+  align-items: center;
+  flex-basis: 8%;
+}
+
+.logo-d img {
+  width: 40px;
+}
+
+.logo-d > div {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.links-n {
+  flex-grow: 1;
+}
+
+.nav-link {
+  height: 80px;
+  align-items: center;
+}
+
+.nav-link a {
+  padding: 30px 20px;
+  color: #343434;
+}
+
+.nav-button {
+  align-items: center;
+  justify-content: center;
+  flex-basis: 4%;
+}
+
+.nav-button button {
+  color: white;
+  background-color: #0161ff;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1rem;
+  cursor: pointer;
 }
 
 .jumbotron {
