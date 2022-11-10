@@ -46,6 +46,10 @@ h4 {
   color: white;
 }
 
+.darkred {
+  color: #61072b;
+}
+
 .container-nc {
   max-width: 2030px;
   margin: 0 auto;
@@ -78,6 +82,10 @@ h4 {
   flex-direction: column;
 }
 
+.align-center {
+  align-items: center;
+}
+
 ul {
   list-style-type: none;
 }
@@ -85,6 +93,10 @@ ul {
 a {
   display: inline-block;
   text-decoration: none;
+}
+
+.col-padding {
+  padding: 50px 40px;
 }
 
 .border {
@@ -120,6 +132,15 @@ a {
 .btn-large-b,
 .btn-black {
   padding: 15px 25px;
+}
+
+.btn-trial {
+  color: black;
+  background-color: white;
+  padding: 15px 50px;
+  position: absolute;
+  top: 137px;
+  right: 160px;
 }
 
 /* HEADER */
@@ -181,7 +202,7 @@ header a {
 }
 
 .fatt {
-  line-height: 80px;
+  height: 80px;
   align-items: center;
 }
 
@@ -207,10 +228,6 @@ header a {
   text-align: center;
   padding: 15px 0;
   border-bottom: #d2d2d5 solid 1px;
-}
-
-.plan {
-  padding: 50px 40px;
 }
 
 .price {
@@ -280,7 +297,33 @@ header a {
 
 .trial {
   height: 400px;
+  position: relative;
+}
+
+.trial-title {
+  color: #61072b;
+  margin: 0;
+  position: absolute;
+  top: 125px;
+}
+
+.faq-q {
+  height: 100px;
+  align-items: center;
   justify-content: space-between;
+  border-top: solid 2px #bbbbbb;
+}
+
+.faq :nth-child(4) {
+  border-bottom: solid 2px #bbbbbb;
+}
+
+.faq-q > div {
+  font-weight: 600;
+}
+
+.faq-q > span {
+  padding-right: 50px;
 }
 
 /* FOOTER */
@@ -291,7 +334,15 @@ header a {
 }
 
 .footer-top {
-  height: 500px;
+  height: 450px;
+}
+
+.footer-top > * {
+  color: white;
+}
+
+.footer-top li {
+  padding: 10px 0;
 }
 
 .footer-bottom {
