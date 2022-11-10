@@ -29,7 +29,7 @@ h2 {
 }
 
 h3 {
-  font-size: 30px;
+  font-size: 25px;
   margin-bottom: 20px;
 }
 
@@ -102,13 +102,24 @@ a {
   background-color: #0161ff;
 }
 
+.btn-black {
+  color: black;
+  border: black solid 1px;
+  margin: 30px 0;
+}
+
 .btn-small {
   padding: 10px 15px;
 }
 
 .btn-large {
-  padding: 15px 25px;
   margin: 30px 0;
+}
+
+.btn-large,
+.btn-large-b,
+.btn-black {
+  padding: 15px 25px;
 }
 
 /* HEADER */
@@ -161,6 +172,13 @@ header a {
 .col-30 i {
   margin-top: 70px;
 }
+.col-50 {
+  flex-basis: 50%;
+}
+
+.col-45 {
+  flex-basis: 45%;
+}
 
 .fatt {
   line-height: 80px;
@@ -209,6 +227,10 @@ header a {
   padding: 15px 0;
 }
 
+.fa-check {
+  color: #0161ff;
+}
+
 .buynow {
   padding-bottom: 30px;
 }
@@ -218,25 +240,31 @@ header a {
 }
 
 .col {
-  /* min-height: 800px; */
   flex-basis: calc(100% / 3);
   margin-bottom: 50px;
   border: #d2d2d5 solid 1px;
 }
 
 .enterprise {
-  min-height: 300px;
+  border: #d2d2d5 solid 1px;
 }
 
 .d-partner {
-  min-height: 500px;
-  justify-content: space-between;
+  height: 500px;
+}
+
+.img-partner,
+.db-col > img {
+  width: 100%;
 }
 
 .db-col {
-  min-height: 400px;
   flex-basis: calc(100% / 3);
-  margin: 30px 0;
+  margin: 50px 0;
+}
+
+.underline {
+  text-decoration: underline;
 }
 
 .c-col {
