@@ -86,12 +86,21 @@
   flex-direction: column;
 }
 
+.flex-sb {
+  display: flex;
+  justify-content: space-between;
+}
+
 .p-50-40 {
   padding: 50px 40px;
 }
 
 .p-50 {
   padding: 50px;
+}
+
+.p-150 {
+  padding: 150px 0;
 }
 
 .col-70 {
@@ -189,9 +198,7 @@ a {
   color: black;
   background-color: white;
   padding: 15px 50px;
-  position: absolute;
-  top: 137px;
-  right: 160px;
+  margin-top: 10px;
 }
 
 /* HEADER */
@@ -361,16 +368,9 @@ ul.list-icon > li :first-child {
   filter: invert(100);
 }
 
-.trial {
-  height: 400px;
-  position: relative;
-}
-
 .trial-title {
   color: #61072b;
   margin: 0;
-  position: absolute;
-  top: 125px;
 }
 
 .faq-q {
