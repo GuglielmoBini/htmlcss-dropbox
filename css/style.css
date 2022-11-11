@@ -6,6 +6,118 @@
   box-sizing: border-box;
 }
 
+/* COLORI */
+
+.bg-lightblue {
+  background-color: #b3d0e7;
+}
+
+.bg-black {
+  background-color: black;
+  color: white;
+}
+
+.lightgreen {
+  background-color: #a2d29b;
+}
+
+.darkred {
+  background-color: #61072b;
+}
+
+.cyan {
+  background-color: #0293ce;
+}
+
+.orange {
+  background-color: #ff1d1c;
+}
+
+.red {
+  background-color: #d50220;
+}
+
+.lightblue {
+  background-color: #b3d0e7;
+}
+
+.blue {
+  background-color: #0e2481;
+}
+
+.yellow {
+  background-color: #ffd830;
+}
+
+/* UTILS */
+
+/* .border {
+  border: 1px dashed black;
+}
+
+.border-w {
+  border: 1px dashed white;
+} */
+
+.container-l {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.container-m,
+.container-mb {
+  max-width: 1200px;
+}
+
+.container-m {
+  margin: 100px auto;
+}
+
+.container-mb {
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-c {
+  display: flex;
+  flex-direction: column;
+}
+
+.p-50-40 {
+  padding: 50px 40px;
+}
+
+.p-50 {
+  padding: 50px;
+}
+
+.col-70 {
+  flex-basis: 70%;
+}
+
+.col-30 {
+  flex-basis: 30%;
+}
+
+.col-50 {
+  flex-basis: 50%;
+}
+
+.col-45 {
+  flex-basis: 45%;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+/* .align-center {
+  align-items: center;
+} */
+
 /* GENERICS */
 
 body {
@@ -37,55 +149,6 @@ h4 {
   margin: 30px 0;
 }
 
-.bg-lightblue {
-  background-color: #b3d0e7;
-}
-
-.bg-black {
-  background-color: black;
-  color: white;
-}
-
-.darkred {
-  color: #61072b;
-}
-
-.container-nc {
-  max-width: 2030px;
-  margin: 0 auto;
-}
-
-.container-jf {
-  max-width: 1400px;
-  margin: 0 auto;
-}
-
-.container-m,
-.container-mt {
-  max-width: 1200px;
-}
-
-.container-m {
-  margin: 100px auto;
-}
-
-.container-mt {
-  margin: 0 auto;
-}
-
-.flex {
-  display: flex;
-}
-
-.flex-c {
-  display: flex;
-  flex-direction: column;
-}
-
-.align-center {
-  align-items: center;
-}
-
 ul {
   list-style-type: none;
 }
@@ -93,18 +156,6 @@ ul {
 a {
   display: inline-block;
   text-decoration: none;
-}
-
-.col-padding {
-  padding: 50px 40px;
-}
-
-.border {
-  border: 1px dashed black;
-}
-
-.border-w {
-  border: 1px dashed white;
 }
 
 /* BUTTONS */
@@ -178,29 +229,15 @@ header a {
   height: 450px;
 }
 
-.col-70 {
-  flex-basis: 70%;
-}
-
-.col-30 {
-  flex-basis: 30%;
-}
-
-.col-30 p {
+.col-30 > p {
   margin-bottom: 30px;
 }
 
-.col-30 i {
+.col-30 > i {
   margin-top: 70px;
 }
-.col-50 {
-  flex-basis: 50%;
-}
 
-.col-45 {
-  flex-basis: 45%;
-}
-
+/* tasti fatturazione */
 .fatt {
   height: 80px;
   align-items: center;
@@ -223,8 +260,9 @@ header a {
   border: #d2d2d5 solid 2px;
   margin-left: 50px;
 }
+/* fine tasti fatturazione */
 
-.clients {
+.user {
   text-align: center;
   padding: 15px 0;
   border-bottom: #d2d2d5 solid 1px;
@@ -238,10 +276,6 @@ header a {
 .period {
   color: #707070;
   margin-bottom: 50px;
-}
-
-.plan li {
-  padding: 15px 0;
 }
 
 .fa-check {
@@ -258,41 +292,54 @@ header a {
 
 .col {
   flex-basis: calc(100% / 3);
-  margin-bottom: 50px;
+}
+
+.col-b {
   border: #d2d2d5 solid 1px;
 }
 
-.enterprise {
-  border: #d2d2d5 solid 1px;
+.m-50b {
+  margin-bottom: 50px;
+}
+
+.m-50 {
+  margin: 50px 0;
 }
 
 .d-partner {
   height: 500px;
 }
 
-.img-partner,
-.db-col > img {
-  width: 100%;
-}
-
-.db-col {
-  flex-basis: calc(100% / 3);
-  margin: 50px 0;
-}
-
-.underline {
-  text-decoration: underline;
-}
-
-.c-col {
-  min-height: 676px;
-  flex-basis: calc(100% / 3);
+.bigsquare {
+  height: calc(100vw / 3);
+  width: calc(100vw / 3);
   flex-wrap: wrap;
+  background-color: #f5f5f5;
 }
 
-.c-col > figure {
-  height: 337px;
-  width: 337px;
+.bigsquare .square {
+  height: 50%;
+  width: 50%;
+}
+
+.p-50 img {
+  width: 50%;
+  padding-bottom: 80px;
+}
+
+.p-50 p {
+  padding: 30px 0;
+}
+
+.square {
+  justify-content: center;
+  align-items: center;
+}
+
+.square img {
+  max-height: 50%;
+  width: 50%;
+  filter: invert(100);
 }
 
 .trial {
@@ -328,11 +375,6 @@ header a {
 
 /* FOOTER */
 
-.bg-black {
-  background-color: black;
-  color: white;
-}
-
 .footer-top {
   height: 450px;
 }
@@ -345,16 +387,16 @@ header a {
   padding: 10px 0;
 }
 
-.footer-bottom {
-  height: 80px;
-}
-
 .footer-top > div {
   padding-top: 80px;
   flex-basis: calc(100% / 5);
 }
 
-.footer-bottom > div {
+.footer-bottom {
+  height: 80px;
+}
+
+.language {
   color: #999999;
   line-height: 80px;
 }
