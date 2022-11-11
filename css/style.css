@@ -226,8 +226,13 @@ a {
 }
 
 header a {
-  padding: 30px 20px;
+  padding: 29px 20px;
   color: #343434;
+  border-bottom: transparent solid 1px;
+}
+
+header a:hover {
+  border-bottom: #343434 solid 1px;
 }
 
 /* MAIN */
