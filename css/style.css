@@ -106,8 +106,8 @@
   flex-basis: 50%;
 }
 
-.col-45 {
-  flex-basis: 45%;
+.col-40 {
+  flex-basis: 40%;
 }
 
 .underline {
@@ -278,8 +278,22 @@ header a {
   margin-bottom: 50px;
 }
 
+ul.list-icon > li {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+ul.list-icon > li :first-child {
+  margin-right: 3px;
+}
+
 .fa-check {
   color: #0161ff;
+}
+
+.p-50-40 > a {
+  display: block;
+  text-align: center;
 }
 
 .buynow {
@@ -334,11 +348,16 @@ header a {
 .square {
   justify-content: center;
   align-items: center;
+  border: 10px solid transparent;
+}
+
+.square:hover {
+  border-color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
 }
 
 .square img {
-  max-height: 50%;
-  width: 50%;
+  width: 60%;
   filter: invert(100);
 }
 
